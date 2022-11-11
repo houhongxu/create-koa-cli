@@ -5,7 +5,7 @@
     "target": "ES2018",
     "moduleResolution": "node",
     "module": "commonjs",
-    "outDir": "./dist",
+    "outDir": "./lib",
     "removeComments": true,
     "noImplicitAny": false,
     "esModuleInterop": true,
@@ -15,5 +15,5 @@
   },
   "compileOnSave": false,
   "includes": ["**/*.ts"],
-  "exclude": ["node_modules", "dist","bin"]
+  "exclude": ["node_modules","bin","lib"]
 }
