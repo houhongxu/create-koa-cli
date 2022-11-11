@@ -1,10 +1,10 @@
 {
   "name": "create-koa-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "HHX <903040380@qq.com>",
   "license": "MIT",
   "bin": {
-    "hhx": "./bin/cli.js"
+    "create-koa-cli": "./bin/cli.js"
   },
   "scripts": {
     "build": "tsc src/index.ts"
