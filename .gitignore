@@ -1,0 +1,12 @@
+.DS_STORE
+node_modules
+dist/
+functions/
+.env.local
+.env.prod
+.npmrc
+yarn.lock
+yarn-error.log
+tcbsecret.dev.json
+tcbsecret.prod.json
+.vscode/

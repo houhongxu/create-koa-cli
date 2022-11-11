@@ -1,10 +1,18 @@
 {
-  "name": "hhx-cli",
-  "version": "0.0.1",
+  "name": "create-koa-cli",
+  "version": "0.0.2",
   "author": "HHX <903040380@qq.com>",
-  "license": "MIT",
   "bin": {
-    "hhx": "./bin/log.js"
+    "create-koa-cli": "./bin/index.js"
   },
-  "dependencies": {}
+  "scripts": {
+    "build": "tsc src/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "commander": "^9.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
 }
