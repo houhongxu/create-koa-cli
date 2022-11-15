@@ -4,16 +4,16 @@
     "allowJs": true,
     "target": "ES2018",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "module": "commonjs",
     "outDir": "./lib",
-    "removeComments": true,
-    "noImplicitAny": false,
-    "esModuleInterop": true,
+    "noImplicitAny": true,
     "preserveConstEnums": true,
-    "typeRoots": ["node_modules/@types"],
-    "baseUrl": ".",
+    "baseUrl": "./",
+    "paths": {
+      "*":["src/*"]
+    }
   },
   "compileOnSave": false,
-  "includes": ["**/*.ts"],
   "exclude": ["node_modules","bin","lib"]
 }
