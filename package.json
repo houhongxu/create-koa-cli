@@ -4,10 +4,11 @@
   "author": "HHX <903040380@qq.com>",
   "license": "MIT",
   "bin": {
-    "create-koa-cli": "create-koa-cli create koa-cli"
+    "create-koa-cli": "./bin/cli.js"
   },
   "scripts": {
-    "build": "rm -rf lib && tsc --build"
+    "build": "rm -rf lib && tsc --build",
+    "publ": "zx ./publish.mjs"
   },
   "files": [
     "bin",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "zx": "^7.1.1"
   }
 }
