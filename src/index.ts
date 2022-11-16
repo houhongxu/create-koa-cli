@@ -1,22 +1,21 @@
+import chalk from 'chalk'
 import { program } from 'commander'
-import { create } from './commander/create'
+import { log } from 'console'
+import { checkNodeVersion, getPackageJson } from 'utils'
+import { create } from 'command'
 
-const createProject = async (projectName: string) => await create(projectName)
+checkNodeVersion()
 
-const packageJson = require('../package.json')
+log(chalk.green('---开始搭建---'))
 
-function init() {
-  program.version(packageJson.version, '-v --version')
+program.version(getPackageJson().version, '-v --version', 'output the version number 显示版本号')
 
-  program.command('create <project-name>').description('Create new project').action(createProject)
+program
+  .command('create', { isDefault: true })
+  .argument('[project-name]', 'project-name 项目名称', 'koa-cli')
+  .description('create new project 创建新项目')
+  .action((projectName) => {
+    create(projectName)
+  })
 
-  program.parse()
-}
-
-console.log('---正在搭建---')
-
-createProject('koa-cli').then(() => {
-  console.log('---搭建完成---')
-
-  init()
-})
+program.parse()

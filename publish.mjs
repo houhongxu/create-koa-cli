@@ -1,5 +1,3 @@
-#!/usr/bin/env zx
-
 await $`yarn build`
 
 await $`yarn version --patch`
