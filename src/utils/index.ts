@@ -14,6 +14,16 @@ export function getPackageJson(): packageJson {
 }
 
 /**
+ * @description: 更新package.json 文件
+ * @param {function} updateFunction
+ */
+export function updatePackageJson(updateFunction: (packageJson: packageJson) => void) {
+  const packageJson = readJsonFile<packageJson>('./package.json')
+  updateFunction(packageJson)
+  writeJsonFile<packageJson>('./package.json', packageJson)
+}
+
+/**
  * @description: 读取指定路径下 json 文件
  * @param {string} filename
  */

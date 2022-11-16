@@ -1,9 +1,11 @@
 # 快速创建 koa 后端环境的脚手架
 
-可通过 yarn create koa-cli 执行
+可通过 `yarn create koa-cli` 执行（npm 尚未支持）
 
-## src 内的源码应该打包入 lib 文件夹
+## QUES
+
+- 在 index 中引入了 commands 的函数后，后续函数才可以自动提示？
 
 ## TODO
 
-- [ ] index.ts 的 create 直接执行是否会导致每次都创建脚手架文件
+- [ ] 支持 npm

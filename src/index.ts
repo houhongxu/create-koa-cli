@@ -1,14 +1,13 @@
 import chalk from 'chalk'
 import { program } from 'commander'
-import { log } from 'console'
 import { checkNodeVersion, getPackageJson } from 'utils'
-import { create } from 'command'
+import { create } from 'commands'
 
 checkNodeVersion()
 
-log(chalk.green('---开始搭建---'))
-
-program.version(getPackageJson().version, '-v --version', 'output the version number 显示版本号')
+program
+  .version(`create-koa-cli ${getPackageJson().version}`, '-v --version', 'output the version number 显示版本号')
+  .usage(chalk.green('create-koa-cli <command> [options]'))
 
 program
   .command('create', { isDefault: true })
