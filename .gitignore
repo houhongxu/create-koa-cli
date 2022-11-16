@@ -3,7 +3,6 @@ node_modules
 dist/
 .env.local
 .env.prod
-yarn.lock
 yarn-error.log
 .vscode/
 lib/
