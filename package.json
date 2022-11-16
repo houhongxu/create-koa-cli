@@ -1,6 +1,6 @@
 {
   "name": "create-koa-cli",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": "HHX <903040380@qq.com>",
   "license": "MIT",
   "bin": {
