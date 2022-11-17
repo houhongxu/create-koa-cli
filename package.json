@@ -1,6 +1,6 @@
 {
   "name": "create-koa-cli",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "author": "HHX <903040380@qq.com>",
   "license": "MIT",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "rm -rf lib && tsc && tsc-alias",
-    "pub": "zx ./publish.mjs"
+    "pub": "node ./publish.js"
   },
   "files": [
     "bin",
