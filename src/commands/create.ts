@@ -55,6 +55,7 @@ async function selectPackages(): Promise<Array<string>> {
       choices: [
         { name: 'typescript', value: 'typescript' },
         { name: 'prettier', value: 'prttier' },
+        { name: '疯狂星期四v50', value: '疯狂星期四v50' },
       ],
     },
   ])

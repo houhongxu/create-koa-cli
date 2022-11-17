@@ -1,11 +1,14 @@
-# 快速创建 koa 后端环境的脚手架
+# 疯狂星期四 v50 ~~快速创建 koa 后端环境的脚手架~~
 
 可通过 `yarn create koa-cli` 执行（npm 尚未支持）
 
-## QUES
-
-- 在 index 中引入了 commands 的函数后，后续函数才可以自动提示？
-
 ## TODO
 
+- [x] 支持 扩展自定义依赖
 - [ ] 支持 npm
+
+## 参考
+
+- [ts-cli](https://github.com/liyongning/ts-cli)
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [vue-cli](https://github.com/vuejs/vue-cli)
