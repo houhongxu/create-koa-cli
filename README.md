@@ -1,4 +1,4 @@
-# 疯狂星期四 v50 ~~快速创建 koa 后端环境的脚手架~~
+# 已集合至HHX仓库
 
 可通过 `yarn create koa-cli` 执行（npm 尚未支持）
 
