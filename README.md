@@ -1,4 +1,4 @@
-# 已集合至HHX仓库
+# koa-cli脚手架
 
 可通过 `yarn create koa-cli` 执行（npm 尚未支持）
 
